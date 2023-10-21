@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToDo-List</title>
+  <link rel="stylesheet" type="text/css" href="todolist.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <div id="toDoListPage">
+    <h1>Your ToDo List</h1>
+    <div id="taskListContainer">
+      <ul id="taskList"></ul> 
+    </div>
+    <div id="taskInputContainer" class="colorfulButtons">
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button id="addTaskButton" onclick="addTask()">Add Task</button>
+    </div>   
+    <div class="colorfulButtons">
+      <button class="default" onclick="changeColor('rgba(255, 255, 255, 0.8)')">Default</button>
+      <button class="pink" onclick="changeColor('pink')">Pink</button>
+      <button class="blue" onclick="changeColor('blue')">Blue</button>
+      <button class="green" onclick="changeColor('green')">Green</button>
+      <button class="orange" onclick="changeColor('orange')">Orange</button>
+  </div>
+</div>
+  
+  <script src="todolist.js"></script>
+</body>
+</html>
